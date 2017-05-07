@@ -1,6 +1,5 @@
 package speciesClasssification;
 
-import dataexamples.MnistImagePipelineExampleLoad;
 import org.datavec.api.io.labels.ParentPathLabelGenerator;
 import org.datavec.api.split.FileSplit;
 import org.datavec.image.loader.NativeImageLoader;
@@ -25,16 +24,12 @@ import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
 import org.nd4j.linalg.dataset.api.preprocessor.DataNormalization;
 import org.nd4j.linalg.dataset.api.preprocessor.ImagePreProcessingScaler;
 import org.nd4j.linalg.lossfunctions.LossFunctions;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Random;
 
 /**
@@ -55,7 +50,7 @@ public class MainView {
     Random randNumGen;
     int batchSize = 1; //numero de imagens por vez
     int outputNum = 2; //numero de possiveis solucoes
-    int numEpochs = 20; //quantidade de treinamento
+    int numEpochs = 30; //quantidade de treinamento
     File trainData;
     File testData;
     FileSplit train;
@@ -153,6 +148,7 @@ public class MainView {
             public void actionPerformed(ActionEvent actionEvent) {
                 try {
                     treinarModelo();
+                    testaModelo();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
