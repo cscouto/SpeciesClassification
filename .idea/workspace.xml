@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e46e15a1-8be9-4723-8505-ade1e0b26817" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/speciesClasssification/App.class" afterPath="$PROJECT_DIR$/target/classes/speciesClasssification/App.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/speciesClasssification/AppTest.class" afterPath="$PROJECT_DIR$/target/test-classes/speciesClasssification/AppTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/speciesClasssification/MainView.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/speciesClasssification/MainView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpeciesClassification.iml" afterPath="$PROJECT_DIR$/SpeciesClassification.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataexamples/BasicCSVClassifier.java" afterPath="$PROJECT_DIR$/src/main/java/dataexamples/BasicCSVClassifier.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataexamples/CSVExample.java" afterPath="$PROJECT_DIR$/src/main/java/dataexamples/CSVExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataexamples/CSVExampleEvaluationMetaData.java" afterPath="$PROJECT_DIR$/src/main/java/dataexamples/CSVExampleEvaluationMetaData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataexamples/CSVPlotter.java" afterPath="$PROJECT_DIR$/src/main/java/dataexamples/CSVPlotter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataexamples/ImageDrawer.java" afterPath="$PROJECT_DIR$/src/main/java/dataexamples/ImageDrawer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataexamples/ImagePipelineExample.java" afterPath="$PROJECT_DIR$/src/main/java/dataexamples/ImagePipelineExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineExample.java" afterPath="$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineExampleAddNeuralNet.java" afterPath="$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineExampleAddNeuralNet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineExampleLoad.java" afterPath="$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineExampleLoad.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineExampleSave.java" afterPath="$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineExampleSave.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineLoadChooser.java" afterPath="$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineLoadChooser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataexamples/PreprocessNormalizerExample.java" afterPath="$PROJECT_DIR$/src/main/java/dataexamples/PreprocessNormalizerExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utilities/DataUtilities.java" afterPath="$PROJECT_DIR$/src/main/java/utilities/DataUtilities.java" />
     </list>
     <ignored path="SpeciesClassification.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MnistImagePipelineExample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineExample.java">
+      <file leaf-file-name="MainView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/MainView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-242">
-              <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="124" selection-end-column="9" />
+            <state relative-caret-position="718">
+              <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,47 +49,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MnistImagePipelineExampleLoad.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineExampleLoad.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MnistImagePipelineExampleSave.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineExampleSave.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="202" column="31" selection-start-line="202" selection-start-column="31" selection-end-line="202" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MnistImagePipelineLoadChooser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineLoadChooser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1240">
-              <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MnistImagePipelineExampleAddNeuralNet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineExampleAddNeuralNet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="214" column="31" selection-start-line="177" selection-start-column="8" selection-end-line="214" selection-end-column="31" />
-              <folding />
-            </state>
+      <file leaf-file-name="MainView.form" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/MainView.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -126,6 +83,8 @@
         <option value="$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineExampleLoad.java" />
         <option value="$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineExampleAddNeuralNet.java" />
         <option value="$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineExampleSave.java" />
+        <option value="$PROJECT_DIR$/src/main/java/speciesClasssification/MainView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/speciesClasssification/MainView.form" />
       </list>
     </option>
   </component>
@@ -148,8 +107,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="1" />
-    <option name="width" value="1919" />
+    <option name="width" value="1920" />
     <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -321,7 +281,7 @@
       <recent name="C:\Users\Tiago\Desktop\TCC\SpeciesClassification\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MnistImagePipelineLoadChooser">
+  <component name="RunManager" selected="Application.MainView">
     <configuration default="false" name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -390,6 +350,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="dataexamples.MnistImagePipelineLoadChooser" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="SpeciesClassification" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="MainView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="speciesClasssification.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="speciesClasssification.MainView" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -832,18 +812,20 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.App" />
       <item index="1" class="java.lang.String" itemvalue="Application.MnistImagePipelineExample" />
       <item index="2" class="java.lang.String" itemvalue="Application.ImagePipelineExample" />
       <item index="3" class="java.lang.String" itemvalue="Application.MnistImagePipelineLoadChooser" />
+      <item index="4" class="java.lang.String" itemvalue="Application.MainView" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.MnistImagePipelineLoadChooser" />
-        <item index="1" class="java.lang.String" itemvalue="Application.MnistImagePipelineExample" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ImagePipelineExample" />
-        <item index="3" class="java.lang.String" itemvalue="Application.App" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.MainView" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MnistImagePipelineLoadChooser" />
+        <item index="2" class="java.lang.String" itemvalue="Application.MnistImagePipelineExample" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ImagePipelineExample" />
+        <item index="4" class="java.lang.String" itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -858,16 +840,16 @@
       <option name="presentableId" value="Default" />
       <updated>1493678663625</updated>
       <workItem from="1493678670366" duration="5590000" />
-      <workItem from="1494028143862" duration="5547000" />
+      <workItem from="1494028143862" duration="8040000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11137000" />
+    <option name="totallyTimeSpent" value="13630000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="1" width="1919" height="1030" extended-state="1" />
-    <editor active="true" />
+    <frame x="-1" y="1" width="1920" height="1030" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -878,12 +860,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.643897" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07390817" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2498685" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25236592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -932,7 +914,7 @@
         <state relative-caret-position="2376">
           <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -995,28 +977,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineLoadChooser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1240">
-          <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-242">
           <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="124" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1043,6 +1009,37 @@
           <caret line="202" column="31" selection-start-line="202" selection-start-column="31" selection-end-line="202" selection-end-column="31" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dataexamples/MnistImagePipelineLoadChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1240">
+          <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/MainView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/MainView.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
   </component>
