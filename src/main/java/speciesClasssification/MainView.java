@@ -33,6 +33,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -50,10 +52,10 @@ public class MainView {
     int width = 28;
     int channels = 1; //apenas 1 canal pois eh cinza
     int rngseed = 10;
-    Random randNumGen = new Random(rngseed);
+    Random randNumGen;
     int batchSize = 1; //numero de imagens por vez
     int outputNum = 2; //numero de possiveis solucoes
-    int numEpochs = 1; //quantidade de treinamento
+    int numEpochs = 20; //quantidade de treinamento
     File trainData;
     File testData;
     FileSplit train;
@@ -62,8 +64,8 @@ public class MainView {
     ImageRecordReader recordReader;
     DataSetIterator dataIter;
     DataNormalization scaler;
-    File locationToSave;
-    private static Logger log = LoggerFactory.getLogger(MainView.class);
+    File LOCATION_TO_SAVE = new File("src/main/bd/trained_network.zip"); // onde salvar a base
+    MultiLayerNetwork model; //modelo da rede
 
     //UI Componentes
     private JLabel reconhecimentoDeEspeciesFlorestaisLabel;
@@ -78,56 +80,82 @@ public class MainView {
     public MainView() throws IOException {
 
         //imagens para treino
-        trainData = new File("C:\\Users\\Tiago\\Desktop\\TCC\\SpeciesClassification\\src\\main\\data");
+        trainData = new File("src/main/data");
         //imagens para teste
-        testData = new File("/mnist_png/testing");
+        testData = new File("src/main/data");
 
         // Define the FileSplit(PATH, ALLOWED FORMATS,random)
+        randNumGen = new Random(rngseed);
 
         //divide imagens para treino e teste
         train = new FileSplit(trainData, NativeImageLoader.ALLOWED_FORMATS, randNumGen);
         test = new FileSplit(testData, NativeImageLoader.ALLOWED_FORMATS, randNumGen);
 
-        //usa label das pastas
+        //usa label das pastas para criar classes
         labelMaker = new ParentPathLabelGenerator();
 
-        //le a imagem
+        //le as imagens
         recordReader = new ImageRecordReader(height, width, channels, labelMaker);
         recordReader.initialize(train);
 
         // DataSet Iterator
         dataIter = new RecordReaderDataSetIterator(recordReader, batchSize, 1, outputNum);
 
-        // Scale pixel values to 0-1
+        // normaliza valores dos pixel entre 0-1
         scaler = new ImagePreProcessingScaler(0, 1);
         scaler.fit(dataIter);
         dataIter.setPreProcessor(scaler);
-
-        // In production you would loop through all the data
-        // in this example the loop is just through 3
-        while (dataIter.hasNext()) {
-            org.nd4j.linalg.dataset.DataSet ds = dataIter.next();
-            System.out.println(ds);
-            System.out.println(dataIter.getLabels());
-
-        }
 
         reconhecerEspecieButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
 
+                System.out.println("Selecionar Especie");
+
+                // pop up file chooser
+                String filechose = fileChose().toString();
+
+                File file = new File(filechose);
+
+                // Use NativeImageLoader to convert to numerical matrix
+
+                NativeImageLoader loader = new NativeImageLoader(height, width, channels);
+
+                // Get the image into an INDarray
+
+                INDArray image = null;
+                try {
+                    image = loader.asMatrix(file);
+                    scaler.transform(image);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                // Pass through to neural Net
+
+                INDArray output = model.output(image);
+                System.out.println("## The FILE CHOSEN WAS " + filechose);
+                System.out.println("## The Neural Nets Pediction ##");
+                System.out.println("## list of probabilities per label ##");
+                //System.out.println("## List of Labels in Order## ");
+                // In new versions labels are always in order
+                System.out.println(output.toString());
+                System.out.println(dataIter.getLabels());
             }
         });
         listarEspeciesButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-
+                System.out.println(dataIter.getLabels());
             }
         });
         treinarRedeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-
+                try {
+                    treinarModelo();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         });
         cadastrarEspeciesButton.addActionListener(new ActionListener() {
@@ -150,125 +178,109 @@ public class MainView {
         frame.setContentPane(main.panelMain);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
-        frame.setVisible(true);
         main.carregaBaseDados();
+        frame.setVisible(true);
     }
 
     public void carregaBaseDados() throws IOException {
 
-        locationToSave = new File("trained_mnist_model.zip");
+        if(LOCATION_TO_SAVE.exists()){
 
-        if(locationToSave.exists()){
-
-            MultiLayerNetwork model = ModelSerializer.restoreMultiLayerNetwork(locationToSave);
-
+            model = ModelSerializer.restoreMultiLayerNetwork(LOCATION_TO_SAVE);
             model.getLabels();
+            testaModelo();
 
-            //Test the Loaded Model with the test data
-
-            recordReader.initialize(test);
-            DataSetIterator testIter = new RecordReaderDataSetIterator(recordReader,batchSize,1,outputNum);
-            scaler.fit(testIter);
-            testIter.setPreProcessor(scaler);
-
-            // Create Eval object with 10 possible classes
-            Evaluation eval = new Evaluation(outputNum);
-
-            while(testIter.hasNext()){
-                DataSet next = testIter.next();
-                INDArray output = model.output(next.getFeatures());
-                eval.eval(next.getLabels(),output);
-
-            }
-
-            log.info(eval.stats());
         }else{
+            criaNovoModelo();
 
-            MultiLayerConfiguration conf = new NeuralNetConfiguration.Builder()
-                    .seed(rngseed)
-                    .optimizationAlgo(OptimizationAlgorithm.STOCHASTIC_GRADIENT_DESCENT)
-                    .iterations(1)
-                    .learningRate(0.006)
-                    .updater(Updater.NESTEROVS).momentum(0.9)
-                    .regularization(true).l2(1e-4)
-                    .list()
-                    .layer(0, new DenseLayer.Builder()
-                            .nIn(height * width)
-                            .nOut(100)//numero de neuronios na proxima camada
-                            .activation(Activation.RELU)
-                            .weightInit(WeightInit.XAVIER)
-                            .build())
-                    .layer(1, new OutputLayer.Builder(LossFunctions.LossFunction.NEGATIVELOGLIKELIHOOD)
-                            .nIn(100)//igual o numero de saidas da camada anterior
-                            .nOut(outputNum)
-                            .activation(Activation.SOFTMAX)
-                            .weightInit(WeightInit.XAVIER)
-                            .build())
-                    .pretrain(false).backprop(true)
-                    .setInputType(InputType.convolutional(height,width,channels))
-                    .build();
-
-            MultiLayerNetwork model = new MultiLayerNetwork(conf);
-            model.init();
-
-            model.setListeners(new ScoreIterationListener(10));
-
-            log.info("*****TRAIN MODEL********");
-            for(int i = 0; i<numEpochs; i++){
-                model.fit(dataIter);
-            }
-
-            log.info("******EVALUATE MODEL******");
+            treinarModelo();
 
             recordReader.reset();
 
-            // The model trained on the training dataset split
-            // now that it has trained we evaluate against the
-            // test data of images the network has not seen
+            testaModelo();
 
-            recordReader.initialize(test);
-            DataSetIterator testIter = new RecordReaderDataSetIterator(recordReader,batchSize,1,outputNum);
-            scaler.fit(testIter);
-            testIter.setPreProcessor(scaler);
-
-        /*
-        log the order of the labels for later use
-        In previous versions the label order was consistent, but random
-        In current verions label order is lexicographic
-        preserving the RecordReader Labels order is no
-        longer needed left in for demonstration
-        purposes
-        */
-            log.info(recordReader.getLabels().toString());
-
-            // Create Eval object with 10 possible classes
-            Evaluation eval = new Evaluation(outputNum);
+            salvaBase();
+        }
+    }
 
 
-            // Evaluate the network
-            while(testIter.hasNext()){
-                org.nd4j.linalg.dataset.DataSet next = testIter.next();
-                INDArray output = model.output(next.getFeatureMatrix());
-                // Compare the Feature Matrix from the model
-                // with the labels from the RecordReader
-                eval.eval(next.getLabels(),output);
+    public void salvaBase() throws IOException {
+        System.out.println("******SAVE TRAINED MODEL******");
 
-            }
+        // boolean save Updater
+        boolean saveUpdater = false;
 
-            log.info(eval.stats());
+        // ModelSerializer needs modelname, saveUpdater, Location
+        ModelSerializer.writeModel(model,LOCATION_TO_SAVE,saveUpdater);
+    }
+    public void criaNovoModelo(){
+        MultiLayerConfiguration conf = new NeuralNetConfiguration.Builder()
+                .seed(rngseed)
+                .optimizationAlgo(OptimizationAlgorithm.STOCHASTIC_GRADIENT_DESCENT)
+                .iterations(1)
+                .learningRate(0.006)
+                .updater(Updater.NESTEROVS).momentum(0.9)
+                .regularization(true).l2(1e-4)
+                .list()
+                .layer(0, new DenseLayer.Builder()
+                        .nIn(height * width)
+                        .nOut(100)//numero de neuronios na proxima camada
+                        .activation(Activation.RELU)
+                        .weightInit(WeightInit.XAVIER)
+                        .build())
+                .layer(1, new OutputLayer.Builder(LossFunctions.LossFunction.NEGATIVELOGLIKELIHOOD)
+                        .nIn(100)//igual o numero de saidas da camada anterior
+                        .nOut(outputNum)
+                        .activation(Activation.SOFTMAX)
+                        .weightInit(WeightInit.XAVIER)
+                        .build())
+                .pretrain(false).backprop(true)
+                .setInputType(InputType.convolutional(height,width,channels))
+                .build();
 
-            log.info("******SAVE TRAINED MODEL******");
-            // Details
+        model = new MultiLayerNetwork(conf);
+        model.init();
 
-            // Where to save model
-            locationToSave = new File("trained_mnist_model.zip");
+        model.setListeners(new ScoreIterationListener(10));
+    }
+    public void treinarModelo() throws IOException {
+        for(int i = 0; i<numEpochs; i++){
+            model.fit(dataIter);
+        }
+        salvaBase();
+    }
 
-            // boolean save Updater
-            boolean saveUpdater = false;
+    public void  testaModelo() throws IOException {
+        //Test the Loaded Model with the test data
 
-            // ModelSerializer needs modelname, saveUpdater, Location
+        recordReader.initialize(test);
+        DataSetIterator testIter = new RecordReaderDataSetIterator(recordReader,batchSize,1,outputNum);
+        scaler.fit(testIter);
+        testIter.setPreProcessor(scaler);
 
-            ModelSerializer.writeModel(model,locationToSave,saveUpdater);
+        // Create Eval object with 10 possible classes
+        Evaluation eval = new Evaluation(outputNum);
+
+        while(testIter.hasNext()){
+            DataSet next = testIter.next();
+            INDArray output = model.output(next.getFeatures());
+            eval.eval(next.getLabels(),output);
+        }
+
+        System.out.println(eval.stats());
+    }
+
+    public static String fileChose(){
+        JFileChooser fc = new JFileChooser();
+        int ret = fc.showOpenDialog(null);
+        if (ret == JFileChooser.APPROVE_OPTION)
+        {
+            File file = fc.getSelectedFile();
+            String filename = file.getAbsolutePath();
+            return filename;
+        }
+        else {
+            return null;
         }
     }
 }
