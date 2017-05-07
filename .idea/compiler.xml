@@ -26,7 +26,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SpeciesClassification" target="1.5" />
+      <module name="SpeciesClassification" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

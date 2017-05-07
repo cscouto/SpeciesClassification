@@ -1,4 +1,4 @@
-package org.deeplearning4j.examples.dataexamples;
+package dataexamples;
 
 
 import org.apache.commons.io.IOUtils;

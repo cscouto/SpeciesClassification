@@ -1,4 +1,4 @@
-package org.deeplearning4j.examples.dataexamples;
+package dataexamples;
 
 import org.datavec.api.records.reader.RecordReader;
 import org.datavec.api.records.reader.impl.csv.CSVRecordReader;

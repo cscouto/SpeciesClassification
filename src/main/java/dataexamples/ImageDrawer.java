@@ -1,4 +1,4 @@
-package org.deeplearning4j.examples.dataexamples;
+package dataexamples;
 
 import javafx.application.Application;
 import javafx.application.Platform;

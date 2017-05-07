@@ -1,4 +1,4 @@
-package org.deeplearning4j.examples.dataexamples;
+package dataexamples;
 
 
 
@@ -14,13 +14,13 @@ import org.datavec.api.split.FileSplit;
 import org.datavec.image.loader.NativeImageLoader;
 import org.datavec.image.recordreader.ImageRecordReader;
 import org.deeplearning4j.datasets.datavec.RecordReaderDataSetIterator;
-import org.deeplearning4j.examples.utilities.DataUtilities;
 import org.nd4j.linalg.dataset.DataSet;
 import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
 import org.nd4j.linalg.dataset.api.preprocessor.DataNormalization;
 import org.nd4j.linalg.dataset.api.preprocessor.ImagePreProcessingScaler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import utilities.DataUtilities;
 
 import java.io.*;
 import java.util.Random;
@@ -81,70 +81,43 @@ public class MnistImagePipelineExample {
         */
         int height = 28;
         int width = 28;
-        int channels = 1;
-        int rngseed = 123;
+        int channels = 1; //apenas 1 canal pois eh cinza
+        int rngseed = 10;
         Random randNumGen = new Random(rngseed);
-        int batchSize = 1;
-        int outputNum = 10;
+        int batchSize = 1; //numero de imagens por vez
+        int outputNum = 2; //numero de possiveis solucoes
 
+        //downloadData();
 
-
-        /*
-        This class downloadData() downloads the data
-        stores the data in java's tmpdir
-        15MB download compressed
-        It will take 158MB of space when uncompressed
-        The data can be downloaded manually here
-        http://github.com/myleott/mnist_png/raw/master/mnist_png.tar.gz
-         */
-
-
-        downloadData();
-
-        // Define the File Paths
-        File trainData = new File(DATA_PATH + "/mnist_png/training");
+        //imagens para treino
+        File trainData = new File("C:\\Users\\Tiago\\Desktop\\TCC\\SpeciesClassification\\src\\main\\data");
+        //imagens para teste
         File testData = new File(DATA_PATH + "/mnist_png/testing");
 
         // Define the FileSplit(PATH, ALLOWED FORMATS,random)
 
-
+        //divide imagens para treino e teste
         FileSplit train = new FileSplit(trainData, NativeImageLoader.ALLOWED_FORMATS, randNumGen);
         FileSplit test = new FileSplit(testData, NativeImageLoader.ALLOWED_FORMATS, randNumGen);
 
-        // Extract the parent path as the image label
-
+        //usa label das pastas
         ParentPathLabelGenerator labelMaker = new ParentPathLabelGenerator();
 
+        //le a imagem
         ImageRecordReader recordReader = new ImageRecordReader(height, width, channels, labelMaker);
-
-        // Initialize the record reader
-        // add a listener, to extract the name
-
         recordReader.initialize(train);
 
-        // The LogRecordListener will log the path of each image read
-        // used here for information purposes,
-        // If the whole dataset was ingested this would place 60,000
-        // lines in our logs
-        // It will show up in the output with this format
-        // o.d.a.r.l.i.LogRecordListener - Reading /tmp/mnist_png/training/4/36384.png
-
-        recordReader.setListeners(new LogRecordListener());
-
         // DataSet Iterator
-
         DataSetIterator dataIter = new RecordReaderDataSetIterator(recordReader, batchSize, 1, outputNum);
 
         // Scale pixel values to 0-1
-
         DataNormalization scaler = new ImagePreProcessingScaler(0, 1);
         scaler.fit(dataIter);
         dataIter.setPreProcessor(scaler);
 
         // In production you would loop through all the data
         // in this example the loop is just through 3
-        // images for demonstration purposes
-        for (int i = 1; i < 3; i++) {
+        while (dataIter.hasNext()) {
             DataSet ds = dataIter.next();
             System.out.println(ds);
             System.out.println(dataIter.getLabels());

@@ -1,4 +1,4 @@
-package org.deeplearning4j.examples.dataexamples;
+package dataexamples;
 
 import org.apache.commons.compress.archivers.tar.TarArchiveEntry;
 import org.apache.commons.compress.archivers.tar.TarArchiveInputStream;
@@ -150,12 +150,12 @@ public class MnistImagePipelineExampleAddNeuralNet {
             .list()
             .layer(0, new DenseLayer.Builder()
                 .nIn(height * width)
-                .nOut(100)
+                .nOut(100) //numero de neuronios na proxima camada
                 .activation(Activation.RELU)
                 .weightInit(WeightInit.XAVIER)
                 .build())
             .layer(1, new OutputLayer.Builder(LossFunctions.LossFunction.NEGATIVELOGLIKELIHOOD)
-                .nIn(100)
+                .nIn(100) //igual o numero de saidas da camada anterior
                 .nOut(outputNum)
                 .activation(Activation.SOFTMAX)
                 .weightInit(WeightInit.XAVIER)

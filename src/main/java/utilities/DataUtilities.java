@@ -1,4 +1,4 @@
-package org.deeplearning4j.examples.utilities;
+package utilities;
 
 import org.apache.commons.compress.archivers.tar.TarArchiveEntry;
 import org.apache.commons.compress.archivers.tar.TarArchiveInputStream;

@@ -1,4 +1,4 @@
-package org.deeplearning4j.examples.dataexamples;
+package dataexamples;
 
 import org.datavec.api.records.Record;
 import org.datavec.api.records.metadata.RecordMetaData;
