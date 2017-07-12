@@ -49,7 +49,7 @@ public class MainView {
     int rngseed = 10;
     Random randNumGen;
     int batchSize = 10; //numero de imagens por vez
-    int outputNum = 3; //numero de possiveis solucoes
+    int outputNum = 10; //numero de possiveis solucoes
     int numEpochs = 10; //quantidade de treinamento
     File trainData;
     File testData;

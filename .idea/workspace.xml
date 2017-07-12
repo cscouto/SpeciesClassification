@@ -2,61 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e46e15a1-8be9-4723-8505-ade1e0b26817" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/bd/trained_network.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/05152914829255.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/199285,930,80,0,0,930,520,0,0,0,0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/3251eb1b22e753df029a85aaa18d545c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/ATR72_azul_011.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/AVIAO-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/AVIAO-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/Boeing-747-8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/PP-PDL-em-voo-de-provas-na-Califórnia-1957.-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/a76tiu3411fa18d28u5wxoz1v.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/aviacaoembraerem.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/aviao (1).jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/aviao-em-ingles.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/aviao-lamia.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/aviao-tam.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/aviao.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/aviaoaviancafutura.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/b787-9_rio_ZtwBCjZ.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/embraer-e-jet-e2-e175.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/emirates-a380-flying.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/foto-aviao-avianca.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/images.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/maioresavioesbrasil_01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/optica.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/regras-de-comportamento-em-avioes-e-aeroportos.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/aviao/tn_901a7b1ea5_azul-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/551033641_0JoX9s6EAraC1KVKrMThXrkGZiV9h7rA9HpBHDY5pW32Cx97tVr69Jnbg4lEVDL-ClfDPPVQqA3sF48PvO5ZyUuCIOZKKfgY=w1024-h768.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/Casa-Salvador-304.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/CasaPoseidaIndiana_TwitterDavidOwusu-Akyeaw_290216.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/DSC_0536-_naE_Casa_Calha.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/Fachadas-de-casas-modernas-o-cartao-de-visita-do-lar-13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/bungalow-20544_960_720.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/casa-babi-e-tomaz-teixeira-01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/casa-de-pedra-314x200-.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/casa-ferias.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/casa-naomi_watts-01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/casa-sustentavel-brasileira.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/casa.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/casa1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/casa2-600x400.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/casa2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/casa3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/casa5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/casa_campo_fechada_cheiro_ruim_casa_praia.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/deltec3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/ik9v5k_49955e45ea3c443d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/ituporanga2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/data/casa/x-casa.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/speciesClasssification/MainView$1.class" afterPath="$PROJECT_DIR$/target/classes/speciesClasssification/MainView$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/speciesClasssification/MainView$2.class" afterPath="$PROJECT_DIR$/target/classes/speciesClasssification/MainView$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/speciesClasssification/MainView$3.class" afterPath="$PROJECT_DIR$/target/classes/speciesClasssification/MainView$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/speciesClasssification/MainView$4.class" afterPath="$PROJECT_DIR$/target/classes/speciesClasssification/MainView$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/speciesClasssification/MainView$5.class" afterPath="$PROJECT_DIR$/target/classes/speciesClasssification/MainView$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/speciesClasssification/MainView.class" afterPath="$PROJECT_DIR$/target/classes/speciesClasssification/MainView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/application.log" afterPath="$PROJECT_DIR$/logs/application.log" />
@@ -74,6 +19,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/SpeciesClassification$MainView.coverage" NAME="MainView Coverage Results" MODIFIED="1499826966040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>speciesClasssification.*</FILTER>
+    </SUITE>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -86,8 +36,8 @@
       <file leaf-file-name="MainView.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/MainView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+            <state relative-caret-position="57">
+              <caret line="61" column="94" selection-start-line="61" selection-start-column="94" selection-end-line="61" selection-end-column="94" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -308,88 +258,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpeciesClassification" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpeciesClassification" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speciesClasssification" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MainView" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpeciesClassification" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpeciesClassification" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="speciesClasssification" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpeciesClassification" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpeciesClassification" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -416,6 +284,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -982,16 +851,16 @@
       <updated>1493678663625</updated>
       <workItem from="1493678670366" duration="5590000" />
       <workItem from="1494028143862" duration="23638000" />
-      <workItem from="1499817800631" duration="1576000" />
+      <workItem from="1499817800631" duration="3799000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30804000" />
+    <option name="totallyTimeSpent" value="33027000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="8" width="1920" height="1030" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1003,11 +872,12 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.68092483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2597614" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2597614" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1164,8 +1034,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/MainView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+        <state relative-caret-position="57">
+          <caret line="61" column="94" selection-start-line="61" selection-start-column="94" selection-end-line="61" selection-end-column="94" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
