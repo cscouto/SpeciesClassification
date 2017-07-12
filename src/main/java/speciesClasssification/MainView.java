@@ -48,9 +48,9 @@ public class MainView {
     int channels = 1; //apenas 1 canal pois eh cinza
     int rngseed = 10;
     Random randNumGen;
-    int batchSize = 1; //numero de imagens por vez
-    int outputNum = 2; //numero de possiveis solucoes
-    int numEpochs = 30; //quantidade de treinamento
+    int batchSize = 10; //numero de imagens por vez
+    int outputNum = 3; //numero de possiveis solucoes
+    int numEpochs = 10; //quantidade de treinamento
     File trainData;
     File testData;
     FileSplit train;

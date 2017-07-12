@@ -942,3 +942,627 @@ Number of threads used for NativeOps: 4
                 
 Number of threads used for BLAS: 4
 
+2017-05-15 22:01:02,798 - [WARN] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Skipped [JCublasBackend] backend (unavailable): java.lang.RuntimeException: CUDA backend can't find NVCC within PATH environment variable
+
+2017-05-15 22:01:02,845 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-05-15 22:01:03,759 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-05-15 22:01:14,864 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-05-15 22:03:54,557 - [WARN] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Skipped [JCublasBackend] backend (unavailable): java.lang.RuntimeException: CUDA backend can't find NVCC within PATH environment variable
+
+2017-05-15 22:03:54,573 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-05-15 22:03:54,776 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-05-15 22:04:07,241 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-05-15 22:06:37,141 - [WARN] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Skipped [JCublasBackend] backend (unavailable): java.lang.RuntimeException: CUDA backend can't find NVCC within PATH environment variable
+
+2017-05-15 22:06:37,157 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-05-15 22:06:37,375 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-05-15 22:06:47,755 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-05-15 22:13:49,548 - [WARN] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Skipped [JCublasBackend] backend (unavailable): java.lang.RuntimeException: CUDA backend can't find NVCC within PATH environment variable
+
+2017-05-15 22:13:49,563 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-05-15 22:13:49,810 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-05-15 22:14:01,663 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-05-15 22:21:30,926 - [WARN] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Skipped [JCublasBackend] backend (unavailable): java.lang.RuntimeException: CUDA backend can't find NVCC within PATH environment variable
+
+2017-05-15 22:21:30,942 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-05-15 22:21:31,145 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-05-15 22:21:41,666 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-05-15 22:25:51,713 - [WARN] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Skipped [JCublasBackend] backend (unavailable): java.lang.RuntimeException: CUDA backend can't find NVCC within PATH environment variable
+
+2017-05-15 22:25:51,729 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-05-15 22:25:51,989 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-05-15 22:26:03,363 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-05-15 22:27:53,952 - [WARN] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Skipped [JCublasBackend] backend (unavailable): java.lang.RuntimeException: CUDA backend can't find NVCC within PATH environment variable
+
+2017-05-15 22:27:53,983 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-05-15 22:27:54,237 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-05-15 22:28:04,325 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-05-15 22:29:41,640 - [WARN] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Skipped [JCublasBackend] backend (unavailable): java.lang.RuntimeException: CUDA backend can't find NVCC within PATH environment variable
+
+2017-05-15 22:29:41,655 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-05-15 22:29:41,905 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-05-15 22:29:53,452 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-05-15 22:32:19,436 - [WARN] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Skipped [JCublasBackend] backend (unavailable): java.lang.RuntimeException: CUDA backend can't find NVCC within PATH environment variable
+
+2017-05-15 22:32:19,452 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-05-15 22:32:19,655 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-05-15 22:32:24,273 - [WARN] - from org.deeplearning4j.nn.conf.MultiLayerConfiguration in main
+                
+Warning: new network default sets pretrain to false.
+
+2017-05-15 22:32:24,273 - [WARN] - from org.deeplearning4j.nn.conf.MultiLayerConfiguration in main
+                
+Warning: new network default sets backprop to true.
+
+2017-05-15 22:32:30,810 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-05-15 22:32:31,026 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 0 is 2.7952581818763362
+
+2017-05-15 22:35:08,258 - [WARN] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Skipped [JCublasBackend] backend (unavailable): java.lang.RuntimeException: CUDA backend can't find NVCC within PATH environment variable
+
+2017-05-15 22:35:08,274 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-05-15 22:35:08,499 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-05-15 22:35:13,183 - [WARN] - from org.deeplearning4j.nn.conf.MultiLayerConfiguration in main
+                
+Warning: new network default sets pretrain to false.
+
+2017-05-15 22:35:13,183 - [WARN] - from org.deeplearning4j.nn.conf.MultiLayerConfiguration in main
+                
+Warning: new network default sets backprop to true.
+
+2017-05-15 22:35:19,140 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-05-15 22:35:19,234 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 0 is 2.7952581818763362
+
+2017-05-15 22:38:17,048 - [WARN] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Skipped [JCublasBackend] backend (unavailable): java.lang.RuntimeException: CUDA backend can't find NVCC within PATH environment variable
+
+2017-05-15 22:38:17,064 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-05-15 22:38:17,294 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-05-15 22:38:21,465 - [WARN] - from org.deeplearning4j.nn.conf.MultiLayerConfiguration in main
+                
+Warning: new network default sets pretrain to false.
+
+2017-05-15 22:38:21,465 - [WARN] - from org.deeplearning4j.nn.conf.MultiLayerConfiguration in main
+                
+Warning: new network default sets backprop to true.
+
+2017-05-15 22:38:27,969 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-05-15 22:38:28,000 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 0 is 2.7952581818763362
+
+2017-05-15 22:38:51,750 - [WARN] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Skipped [JCublasBackend] backend (unavailable): java.lang.RuntimeException: CUDA backend can't find NVCC within PATH environment variable
+
+2017-05-15 22:38:51,766 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-05-15 22:38:51,969 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-05-15 22:38:56,276 - [WARN] - from org.deeplearning4j.nn.conf.MultiLayerConfiguration in main
+                
+Warning: new network default sets pretrain to false.
+
+2017-05-15 22:38:56,276 - [WARN] - from org.deeplearning4j.nn.conf.MultiLayerConfiguration in main
+                
+Warning: new network default sets backprop to true.
+
+2017-05-15 22:39:01,689 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-05-15 22:39:01,736 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 0 is 2.7952581818763362
+
+2017-05-15 22:42:49,158 - [WARN] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Skipped [JCublasBackend] backend (unavailable): java.lang.RuntimeException: CUDA backend can't find NVCC within PATH environment variable
+
+2017-05-15 22:42:49,158 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-05-15 22:42:49,380 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-05-15 22:42:54,313 - [WARN] - from org.deeplearning4j.nn.conf.MultiLayerConfiguration in main
+                
+Warning: new network default sets pretrain to false.
+
+2017-05-15 22:42:54,314 - [WARN] - from org.deeplearning4j.nn.conf.MultiLayerConfiguration in main
+                
+Warning: new network default sets backprop to true.
+
+2017-05-15 22:44:33,643 - [WARN] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Skipped [JCublasBackend] backend (unavailable): java.lang.RuntimeException: CUDA backend can't find NVCC within PATH environment variable
+
+2017-05-15 22:44:33,659 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-05-15 22:44:33,925 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-05-15 22:44:39,571 - [WARN] - from org.deeplearning4j.nn.conf.MultiLayerConfiguration in main
+                
+Warning: new network default sets pretrain to false.
+
+2017-05-15 22:44:39,572 - [WARN] - from org.deeplearning4j.nn.conf.MultiLayerConfiguration in main
+                
+Warning: new network default sets backprop to true.
+
+2017-05-15 22:44:41,783 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-05-15 22:44:41,877 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 0 is 0.7144730754178924
+
+2017-05-15 22:44:44,864 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 10 is 0.5831186742157313
+
+2017-05-15 22:44:48,339 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 20 is 1.3298627076256908
+
+2017-05-15 22:44:51,904 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 30 is 0.7062787286484624
+
+2017-05-15 22:44:55,614 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 40 is 0.16819353208655924
+
+2017-05-15 22:44:59,646 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 50 is 0.18301068240212073
+
+2017-05-15 22:45:03,476 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 60 is 0.26959241207573387
+
+2017-05-15 22:45:06,815 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 70 is 0.017693298738275156
+
+2017-05-15 22:45:10,425 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 80 is 0.13182535261056047
+
+2017-05-15 22:45:14,684 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 90 is 0.021156094257533488
+
+2017-05-15 22:45:18,830 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 100 is 0.09766989057235796
+
+2017-05-15 22:45:22,734 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 110 is 0.05528194066417727
+
+2017-05-15 22:45:25,913 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 120 is 0.014751597722065007
+
+2017-05-15 22:45:29,118 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 130 is 0.017809389937317247
+
+2017-05-15 22:45:32,324 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 140 is 0.009573774898739293
+
+2017-05-15 22:45:36,667 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 150 is 0.020678358585975325
+
+2017-05-15 22:45:40,385 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 160 is 0.00972709310873903
+
+2017-05-15 22:45:43,801 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 170 is 0.009088374099670367
+
+2017-05-15 22:45:46,966 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 180 is 0.013480904395684468
+
+2017-05-15 22:45:50,137 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 190 is 0.025648809310726304
+
+2017-05-15 22:45:53,424 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 200 is 0.009175932071027345
+
+2017-05-15 22:45:57,847 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 210 is 0.08021116058063381
+
+2017-05-15 22:46:03,312 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 220 is 0.009112539425744266
+
+2017-05-15 22:46:09,467 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 230 is 0.009973261109625276
+
+2017-05-15 22:46:38,986 - [WARN] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Skipped [JCublasBackend] backend (unavailable): java.lang.RuntimeException: CUDA backend can't find NVCC within PATH environment variable
+
+2017-05-15 22:46:39,002 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-05-15 22:46:39,252 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-05-15 22:46:45,021 - [WARN] - from org.deeplearning4j.nn.conf.MultiLayerConfiguration in main
+                
+Warning: new network default sets pretrain to false.
+
+2017-05-15 22:46:45,021 - [WARN] - from org.deeplearning4j.nn.conf.MultiLayerConfiguration in main
+                
+Warning: new network default sets backprop to true.
+
+2017-05-15 22:46:50,804 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-05-15 22:46:50,851 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 0 is 0.6310707337407486
+
+2017-05-15 22:47:33,711 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 10 is 0.24819884851328067
+
+2017-05-15 22:48:11,721 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 20 is 0.06943713011404803
+
+2017-05-15 22:48:46,891 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 30 is 0.09041255387767766
+
+2017-05-15 22:49:19,410 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 40 is 0.004464652904954569
+
+2017-05-15 22:49:51,813 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 50 is 0.014786971441739558
+
+2017-05-15 22:50:26,916 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 60 is 2.952457903561153
+
+2017-05-15 22:51:08,699 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 70 is 0.008024140147556237
+
+2017-05-15 22:51:41,627 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 80 is 0.19450849697721348
+
+2017-05-15 22:52:12,853 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 90 is 0.39952527396934406
+
+2017-05-15 22:52:44,856 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 100 is 0.009305549255523852
+
+2017-05-15 22:53:17,338 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 110 is 0.010983559157744956
+
+2017-05-15 22:54:49,075 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in AWT-EventQueue-0
+                
+Score at iteration 120 is 1.4465589580920322
+
+2017-05-15 22:55:23,629 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in AWT-EventQueue-0
+                
+Score at iteration 130 is 0.4478211360219195
+
+2017-05-15 22:55:56,128 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in AWT-EventQueue-0
+                
+Score at iteration 140 is 0.08768127965043801
+
+2017-05-15 22:56:28,898 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in AWT-EventQueue-0
+                
+Score at iteration 150 is 0.00912533883134956
+
+2017-05-15 22:57:00,067 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in AWT-EventQueue-0
+                
+Score at iteration 160 is 0.02010472408275694
+
+2017-05-15 22:57:32,517 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in AWT-EventQueue-0
+                
+Score at iteration 170 is 0.0065999668422436625
+
+2017-05-15 22:58:03,777 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in AWT-EventQueue-0
+                
+Score at iteration 180 is 0.024785858909467447
+
+2017-05-15 22:58:38,792 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in AWT-EventQueue-0
+                
+Score at iteration 190 is 0.0024263732008811944
+
+2017-05-15 22:59:11,317 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in AWT-EventQueue-0
+                
+Score at iteration 200 is 0.017983863871394036
+
+2017-05-15 22:59:42,219 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in AWT-EventQueue-0
+                
+Score at iteration 210 is 0.0028580821133471295
+
+2017-05-15 23:00:16,646 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in AWT-EventQueue-0
+                
+Score at iteration 220 is 0.012204660513004678
+
+2017-05-15 23:00:48,934 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in AWT-EventQueue-0
+                
+Score at iteration 230 is 0.002815513712108424
+
+2017-07-11 21:04:55,620 - [WARN] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Skipped [JCublasBackend] backend (unavailable): java.lang.RuntimeException: CUDA backend can't find NVCC within PATH environment variable
+
+2017-07-11 21:04:55,734 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-07-11 21:04:56,193 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-07-11 21:05:10,033 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-07-11 21:05:55,225 - [WARN] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Skipped [JCublasBackend] backend (unavailable): java.lang.RuntimeException: CUDA backend can't find NVCC within PATH environment variable
+
+2017-07-11 21:05:55,238 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-07-11 21:05:55,494 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-07-11 21:06:04,797 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-07-11 21:13:31,948 - [WARN] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Skipped [JCublasBackend] backend (unavailable): java.lang.RuntimeException: CUDA backend can't find NVCC within PATH environment variable
+
+2017-07-11 21:13:31,964 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-07-11 21:13:32,183 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-07-11 21:13:36,823 - [WARN] - from org.deeplearning4j.nn.conf.MultiLayerConfiguration in main
+                
+Warning: new network default sets pretrain to false.
+
+2017-07-11 21:13:36,823 - [WARN] - from org.deeplearning4j.nn.conf.MultiLayerConfiguration in main
+                
+Warning: new network default sets backprop to true.
+
+2017-07-11 21:13:41,603 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-07-11 21:13:41,681 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 0 is 1.800492508581127
+
+2017-07-11 21:14:14,041 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 10 is 1.0036476883802543
+
+2017-07-11 21:14:48,168 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 20 is 0.6410822982707783
+
+2017-07-11 21:15:21,542 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 30 is 0.28749641220239575
+
+2017-07-11 21:15:53,523 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 40 is 0.23059201295654003
+
+2017-07-11 21:16:25,375 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 50 is 0.05590618833028429
+
+2017-07-11 21:17:02,104 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 60 is 0.05570897708397178
+
+2017-07-11 21:17:34,733 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 70 is 0.2001067843610976
+
+2017-07-11 21:18:09,849 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 80 is 0.05339985493445767
+
+2017-07-11 21:18:42,909 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 90 is 0.03520949904853945
+
+2017-07-11 21:19:17,688 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 100 is 0.02886269801069759
+
+2017-07-11 21:19:49,211 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 110 is 0.009710437075200935
+
+2017-07-11 21:20:24,638 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 120 is 0.027668512647573425
+
+2017-07-11 21:20:58,932 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 130 is 0.012676114972077232
+
+2017-07-11 21:21:31,906 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 140 is 0.036307261997244294
+
+2017-07-11 21:22:18,041 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 150 is 0.022682206478357867
+
+2017-07-11 21:22:58,866 - [INFO] - from org.deeplearning4j.optimize.listeners.ScoreIterationListener in main
+                
+Score at iteration 160 is 0.008862555393595551
+
