@@ -5,19 +5,24 @@ package speciesClasssification;
  */
 
 import java.util.concurrent.atomic.AtomicLong;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
  public class GreetingController {
+    @RequestMapping(value = "/greeting")
+    public ResponseEntity<Greeting> greeting()
+    {
+        Greeting g = new Greeting(1, "Ola");
+        return new ResponseEntity<Greeting>(g, HttpStatus.OK);
+    }
 
-    private static final String template = "Hello, %s!";
-    private final AtomicLong counter = new AtomicLong();
-
-    @RequestMapping("/greeting")
-    public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
-        return new Greeting(counter.incrementAndGet(),
-                String.format(template, name));
+    @RequestMapping(value = "/greetings", method = RequestMethod.POST, headers="Accept=application/json")
+    public ResponseEntity<String> greetings( @RequestBody  String g)
+   throws Exception {
+        return new ResponseEntity<String>(g, HttpStatus.OK);
     }
 }
