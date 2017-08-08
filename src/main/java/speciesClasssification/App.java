@@ -13,15 +13,21 @@
         import org.deeplearning4j.nn.weights.WeightInit;
         import org.nd4j.linalg.activations.Activation;
         import org.nd4j.linalg.lossfunctions.LossFunctions;
+        import org.springframework.boot.SpringApplication;
+        import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Created by Tiago on 5/1/2017.
  */
+
+@SpringBootApplication
 public class App {
 
     public static void main(String[] args) throws Exception {
 
-        //obtendo dataset
+        SpringApplication.run(App.class, args);
+
+       /* //obtendo dataset
         CifarDataSetIterator dataSetIterator = new CifarDataSetIterator(2, 5000, true);
 
         //printando os labels
@@ -112,7 +118,7 @@ public class App {
 
         //criado o data set para classificacao
         Evaluation evaluation = network.evaluate(new CifarDataSetIterator(2, 500, false));
-        System.out.println(evaluation.stats());
+        System.out.println(evaluation.stats());*/
     }
 }
 
