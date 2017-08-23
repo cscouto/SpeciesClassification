@@ -1,15 +1,13 @@
-package speciesClasssification;
+package speciesClasssification.Controller;
 
 /**
  * Created by Tiago on 8/8/2017.
  */
 
-import java.util.concurrent.atomic.AtomicLong;
-
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import speciesClasssification.Model.Greeting;
 
 @RestController
  public class GreetingController {

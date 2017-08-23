@@ -1,4 +1,4 @@
-package speciesClasssification;
+package speciesClasssification.View;
 
 import org.datavec.api.io.labels.ParentPathLabelGenerator;
 import org.datavec.api.split.FileSplit;

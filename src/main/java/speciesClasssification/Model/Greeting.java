@@ -1,4 +1,4 @@
-package speciesClasssification;
+package speciesClasssification.Model;
 
 /**
  * Created by Tiago on 8/8/2017.
