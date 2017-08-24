@@ -16,7 +16,7 @@ public class Test {
     static{ System.loadLibrary(Core.NATIVE_LIBRARY_NAME); }
 
     public static void main(String[] args) {
-        Mat img = Imgcodecs.imread("src/main/data/carambola/carambola 0001.jpg");
+        Mat img = Imgcodecs.imread("src/main/data/Guapuruvu/guapuruvu0001.jpg");
 
         Mat blurredImage = new Mat();
         Mat hsvImage = new Mat();
@@ -31,10 +31,10 @@ public class Test {
 
         // get thresholding values from the UI
         // remember: H ranges 0-180, S and V range 0-255
-        Scalar minValues = new Scalar(0, 70,
+        Scalar minValues = new Scalar(20, 60,
                 0);
-        Scalar maxValues = new Scalar(90, 255,
-                70);
+        Scalar maxValues = new Scalar(70, 200,
+                255);
 
         // show the current selected HSV range
         String valuesToPrint = "Hue range: " + minValues.val[0] + "-" + maxValues.val[0]
@@ -75,7 +75,7 @@ public class Test {
             // for each contour, display it in blue
             for (int idx = 0; idx >= 0; idx = (int) hierarchy.get(0, idx)[0])
             {
-                Imgproc.drawContours(frame, contours, idx, new Scalar(255, 255, 0));
+                Imgproc.drawContours(frame, contours, idx, new Scalar(0, 0, 255));
             }
         }
 
