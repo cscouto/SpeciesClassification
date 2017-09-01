@@ -146,7 +146,6 @@ public class SpecieManager {
             makeNewModel();
             trainModel();
             recordReader.reset();
-            testModel();
             storeData();
         }
     }
