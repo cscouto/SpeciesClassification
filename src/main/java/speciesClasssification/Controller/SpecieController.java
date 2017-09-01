@@ -3,10 +3,20 @@ package speciesClasssification.Controller;
 /**
  * Created by Tiago on 8/31/2017.
  */
+import org.apache.commons.net.util.Base64;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import speciesClasssification.Model.SpecieClassification;
+import speciesClasssification.Model.SpecieClassificationResponse;
+import speciesClasssification.Model.SpecieRequest;
 import speciesClasssification.Model.SpecieResponse;
+import sun.misc.BASE64Decoder;
+
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.*;
+import java.util.List;
 
 @RestController
 public class SpecieController {
@@ -18,9 +28,16 @@ public class SpecieController {
         response.list = mg.getSpecies();
         return new ResponseEntity<SpecieResponse>(response, HttpStatus.OK);
     }
-    @RequestMapping(value = "/getSpecies", method = RequestMethod.POST, headers="Accept=application/json")
-    public ResponseEntity<String> getSpecies( @RequestBody  String g)
+    @RequestMapping(value = "/getSpecie", method = RequestMethod.POST, headers="Accept=application/json")
+    public ResponseEntity<SpecieClassificationResponse> getSpecies(@RequestBody  SpecieRequest specieRequest)
             throws Exception {
-        return new ResponseEntity<String>(g, HttpStatus.OK);
+        SpecieManager mg = new SpecieManager();
+        SpecieClassificationResponse response = new SpecieClassificationResponse();
+        if (specieRequest.image != null) {
+            InputStream is = new ByteArrayInputStream(Base64.decodeBase64(specieRequest.image));
+            response.list = mg.identifySpecie(is);
+        }
+
+        return new ResponseEntity<SpecieClassificationResponse>(response, HttpStatus.OK);
     }
 }

@@ -24,9 +24,13 @@ import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
 import org.nd4j.linalg.dataset.api.preprocessor.DataNormalization;
 import org.nd4j.linalg.dataset.api.preprocessor.ImagePreProcessingScaler;
 import org.nd4j.linalg.lossfunctions.LossFunctions;
+import speciesClasssification.Model.SpecieClassification;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -91,33 +95,36 @@ public class SpecieManager {
         dataIter.setPreProcessor(scaler);
     }
 
-    public void identifySpecie() {
+    public List<SpecieClassification> identifySpecie(InputStream bImage) {
+        try {
+            carregaBaseDados();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         // Use NativeImageLoader to convert to numerical matrix
-
         NativeImageLoader loader = new NativeImageLoader(height, width, channels);
 
         // Get the image into an INDarray
-        //TODO
-        File file = new File("");
         INDArray image = null;
         try {
-            image = loader.asMatrix(file);
+            image = loader.asMatrix(bImage);
             scaler.transform(image);
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        List<SpecieClassification> list = new ArrayList<>();
         // Pass through to neural Net
         INDArray output = model.output(image);
-
-        //TODO
-        System.out.println("## The FILE CHOSEN WAS " + "NOME_DA_IMAGE");
-        System.out.println("## The Neural Nets Pediction ##");
-        System.out.println("## list of probabilities per label ##");
-        //System.out.println("## List of Labels in Order## ");
-        // In new versions labels are always in order
-        System.out.println(output.toString());
-        System.out.println(dataIter.getLabels());
+        for (int i=0; i<output.length(); i++) {
+            SpecieClassification c = new SpecieClassification();
+            c.percent = output.getColumn(i).toString();
+            c.name = dataIter.getLabels().get(i);
+            list.add(c);
+        }
+        return list;
     }
+
     public List<String> getSpecies(){
         return dataIter.getLabels();
     }
@@ -132,22 +139,14 @@ public class SpecieManager {
     }
 
     public void carregaBaseDados() throws IOException {
-
         if(LOCATION_TO_SAVE.exists()){
-
             model = ModelSerializer.restoreMultiLayerNetwork(LOCATION_TO_SAVE);
             model.getLabels();
-            testModel();
-
         }else{
             makeNewModel();
-
             trainModel();
-
             recordReader.reset();
-
             testModel();
-
             storeData();
         }
     }
