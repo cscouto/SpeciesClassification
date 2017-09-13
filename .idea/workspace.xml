@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e46e15a1-8be9-4723-8505-ade1e0b26817" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/speciesClasssification/Controller/SpecieController.class" afterPath="$PROJECT_DIR$/target/classes/speciesClasssification/Controller/SpecieController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/speciesClasssification/Controller/SpecieManager.class" afterPath="$PROJECT_DIR$/target/classes/speciesClasssification/Controller/SpecieManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/application.log" afterPath="$PROJECT_DIR$/logs/application.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/speciesClasssification/Controller/SpecieController.java" afterPath="$PROJECT_DIR$/src/main/java/speciesClasssification/Controller/SpecieController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/speciesClasssification/Controller/SpecieManager.java" afterPath="$PROJECT_DIR$/src/main/java/speciesClasssification/Controller/SpecieManager.java" />
     </list>
     <ignored path="SpeciesClassification.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,10 +43,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="-242">
               <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="78" />
               <folding />
             </state>
@@ -51,8 +56,8 @@
       <file leaf-file-name="SpecieManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/Controller/SpecieManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="146" column="26" selection-start-line="146" selection-start-column="26" selection-end-line="146" selection-end-column="26" />
+            <state relative-caret-position="-1574">
+              <caret line="134" column="24" selection-start-line="134" selection-start-column="24" selection-end-line="135" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpecieController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SpecieController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/Controller/SpecieController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="40" column="42" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="42" />
+            <state relative-caret-position="252">
+              <caret line="40" column="37" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,6 +102,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
               <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -148,8 +163,8 @@
         <option value="$PROJECT_DIR$/src/main/java/speciesClasssification/Model/SpecieClassification.java" />
         <option value="$PROJECT_DIR$/src/main/java/speciesClasssification/Model/SpecieClassificationResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/speciesClasssification/Model/MessageResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/speciesClasssification/Controller/SpecieManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/speciesClasssification/Controller/SpecieController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/speciesClasssification/Controller/SpecieManager.java" />
       </list>
     </option>
   </component>
@@ -1003,12 +1018,12 @@
       <workItem from="1503445824127" duration="1080000" />
       <workItem from="1503530792093" duration="8591000" />
       <workItem from="1504219468743" duration="11692000" />
-      <workItem from="1505263673856" duration="1669000" />
+      <workItem from="1505263673856" duration="2278000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70903000" />
+    <option name="totallyTimeSpent" value="71512000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1237,14 +1252,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/datavec/datavec-data-image/0.7.2/datavec-data-image-0.7.2.jar!/org/datavec/image/loader/NativeImageLoader.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
@@ -1272,14 +1279,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/data/Guapuruvu/guapuruvu0001.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="78" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/Model/SpecieRequest.java">
@@ -1322,23 +1321,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/Controller/SpecieManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/Controller/SpecieController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="146" column="26" selection-start-line="146" selection-start-column="26" selection-end-line="146" selection-end-column="26" />
+        <state relative-caret-position="252">
+          <caret line="40" column="37" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/Controller/SpecieController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/Controller/SpecieManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="40" column="42" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="42" />
+        <state relative-caret-position="-1574">
+          <caret line="134" column="24" selection-start-line="134" selection-start-column="24" selection-end-line="135" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/speciesClasssification/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-242">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="78" />
+          <folding />
         </state>
       </provider>
     </entry>

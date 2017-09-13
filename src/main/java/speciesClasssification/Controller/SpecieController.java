@@ -38,7 +38,7 @@ public class SpecieController {
         return new ResponseEntity<SpecieClassificationResponse>(response, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/trainNetWork", method = RequestMethod.POST, headers="Accept=application/json")
+    @RequestMapping(value = "/trainNetWork")
     public ResponseEntity<MessageResponse> trainNetwork()
             throws Exception {
         SpecieManager mg = new SpecieManager();
