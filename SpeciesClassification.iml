@@ -227,7 +227,6 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.8.9" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-cluster_2.11:2.3.13" level="project" />
     <orderEntry type="library" name="Maven: com.beust:jcommander:1.27" level="project" />
-    <orderEntry type="library" name="Maven: org.deeplearning4j:dl4j-cuda-specific-examples:0.8-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-parallel-wrapper_2.11:0.8.0" level="project" />
     <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-modelimport:0.8.0" level="project" />
     <orderEntry type="module-library">
@@ -281,7 +280,6 @@
     <orderEntry type="library" name="Maven: org.nd4j:nd4j-cuda-8.0:linux-ppc64le:0.8.0" level="project" />
     <orderEntry type="library" name="Maven: org.datavec:datavec-data-codec:0.8.0" level="project" />
     <orderEntry type="library" name="Maven: org.jcodec:jcodec:0.1.5" level="project" />
-    <orderEntry type="library" name="Maven: org.deeplearning4j:dl4j-examples:0.8-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-nlp:0.8.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.directory.studio:org.apache.commons.codec:1.8" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />

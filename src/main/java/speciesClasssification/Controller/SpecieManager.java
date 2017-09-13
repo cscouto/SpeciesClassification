@@ -140,8 +140,7 @@ public class SpecieManager {
     public String trainNetworkResponse(){
         try {
             carregaBaseDados();
-            trainModel();
-            testModel();
+          // trainModel();
         } catch (IOException e) {
             e.printStackTrace();
         }
