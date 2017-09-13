@@ -10,6 +10,20 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../opencv/build/java/opencv-330.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <NATIVE>
+          <root url="file://$MODULE_DIR$/../../opencv/build/java/x64" />
+        </NATIVE>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../../opencv/build/java/opencv-330.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-core:0.7.2" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
@@ -148,6 +162,9 @@
     <orderEntry type="library" name="Maven: org.glassfish.hk2.external:javax.inject:2.5.0-b32" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.hk2:hk2-locator:2.5.0-b32" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard.metrics:metrics-httpclient:3.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.6" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.10" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.jersey.connectors:jersey-apache-connector:2.16" level="project" />
     <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-play_2.11:0.8.0" level="project" />
     <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-ui-model:0.8.0" level="project" />
@@ -192,6 +209,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.10.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.10.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: net.jodah:typetools:0.4.3" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:18.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:2.0.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-servlet-api:8.0.21" level="project" />
     <orderEntry type="library" name="Maven: org.javassist:javassist:3.21.0-GA" level="project" />
@@ -227,69 +245,6 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.8.9" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-cluster_2.11:2.3.13" level="project" />
     <orderEntry type="library" name="Maven: com.beust:jcommander:1.27" level="project" />
-    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-parallel-wrapper_2.11:0.8.0" level="project" />
-    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-modelimport:0.8.0" level="project" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../opencv/build/java/opencv-330.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <NATIVE>
-          <root url="file://$MODULE_DIR$/../../opencv/build/java/x64" />
-        </NATIVE>
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/../../opencv/build/java/opencv-330.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:1.10.0-patch1-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:linux-x86:1.10.0-patch1-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:linux-x86_64:1.10.0-patch1-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:linux-ppc64le:1.10.0-patch1-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:macosx-x86_64:1.10.0-patch1-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:windows-x86:1.10.0-patch1-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5:windows-x86_64:1.10.0-patch1-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-parameter-server:0.8.0" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-parameter-server-model:0.8.0" level="project" />
-    <orderEntry type="library" name="Maven: com.mashape.unirest:unirest-java:1.4.9" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpasyncclient:4.1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore-nio:4.4.6" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpmime:4.5.3" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-aeron:0.8.0" level="project" />
-    <orderEntry type="library" name="Maven: io.aeron:aeron-all:1.0.4" level="project" />
-    <orderEntry type="library" name="Maven: uk.co.real-logic:sbe-all:1.5.4" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-parameter-server-client:0.8.0" level="project" />
-    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-ui_2.11:0.8.0" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-jackson:0.8.0" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-base64:0.8.0" level="project" />
-    <orderEntry type="library" name="Maven: commons-net:commons-net:3.1" level="project" />
-    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-ui-resources:0.8.0" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-cuda-8.0-platform:0.8.0" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:hdf5-platform:1.10.0-patch1-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:cuda-platform:8.0-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:cuda:8.0-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:cuda:linux-x86_64:8.0-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:cuda:linux-ppc64le:8.0-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:cuda:macosx-x86_64:8.0-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.bytedeco.javacpp-presets:cuda:windows-x86_64:8.0-1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-pool2:2.4.2" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-cuda-8.0:linux-x86_64:0.8.0" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-cuda-8.0:macosx-x86_64:0.8.0" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-cuda-8.0:windows-x86_64:0.8.0" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-cuda-8.0:linux-ppc64le:0.8.0" level="project" />
-    <orderEntry type="library" name="Maven: org.datavec:datavec-data-codec:0.8.0" level="project" />
-    <orderEntry type="library" name="Maven: org.jcodec:jcodec:0.1.5" level="project" />
-    <orderEntry type="library" name="Maven: org.deeplearning4j:deeplearning4j-nlp:0.8.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.directory.studio:org.apache.commons.codec:1.8" level="project" />
-    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
-    <orderEntry type="library" name="Maven: com.google.guava:guava:19.0" level="project" />
-    <orderEntry type="library" name="Maven: jfree:jfreechart:1.0.13" level="project" />
-    <orderEntry type="library" name="Maven: jfree:jcommon:1.0.16" level="project" />
-    <orderEntry type="library" name="Maven: org.nd4j:nd4j-cuda-8.0:0.8.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.6" level="project" />
-    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.10" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:1.5.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:1.5.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:1.5.5.RELEASE" level="project" />
@@ -298,7 +253,7 @@
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-tomcat:1.5.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.16" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:8.5.16" level="project" />
-    <orderEntry type="library" name="Maven: org.jfree:jcommon:1.0.23" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-websocket:8.5.16" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-validator:5.3.5.Final" level="project" />
     <orderEntry type="library" name="Maven: javax.validation:validation-api:1.1.0.Final" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml:classmate:1.3.3" level="project" />
@@ -322,6 +277,5 @@
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:json-smart:2.2.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:accessors-smart:1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.ow2.asm:asm:5.0.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-websocket:8.5.16" level="project" />
   </component>
 </module>
