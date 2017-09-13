@@ -7,10 +7,7 @@ import org.apache.commons.net.util.Base64;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import speciesClasssification.Model.SpecieClassification;
-import speciesClasssification.Model.SpecieClassificationResponse;
-import speciesClasssification.Model.SpecieRequest;
-import speciesClasssification.Model.SpecieResponse;
+import speciesClasssification.Model.*;
 import sun.misc.BASE64Decoder;
 
 import javax.imageio.ImageIO;
@@ -39,5 +36,15 @@ public class SpecieController {
         }
 
         return new ResponseEntity<SpecieClassificationResponse>(response, HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/trainNetWork", method = RequestMethod.POST, headers="Accept=application/json")
+    public ResponseEntity<MessageResponse> trainNetwork()
+            throws Exception {
+        SpecieManager mg = new SpecieManager();
+        MessageResponse response = new MessageResponse();
+       response.message =  mg.trainNetworkResponse();
+
+        return new ResponseEntity<MessageResponse>(response, HttpStatus.OK);
     }
 }

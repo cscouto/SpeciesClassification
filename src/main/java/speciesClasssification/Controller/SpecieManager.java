@@ -137,6 +137,15 @@ public class SpecieManager {
             e.printStackTrace();
         }
     }
+    public String trainNetworkResponse(){
+        try {
+            trainModel();
+            testModel();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "conluido";
+    }
 
     public void carregaBaseDados() throws IOException {
         if(LOCATION_TO_SAVE.exists()){
