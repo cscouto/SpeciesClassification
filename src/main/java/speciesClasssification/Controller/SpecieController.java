@@ -3,12 +3,17 @@ package speciesClasssification.Controller;
 /**
  * Created by Tiago on 8/31/2017.
  */
-import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.net.util.Base64;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import speciesClasssification.Model.*;
+import sun.misc.BASE64Decoder;
+
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.*;
+import java.util.List;
 
 @RestController
 public class SpecieController {
