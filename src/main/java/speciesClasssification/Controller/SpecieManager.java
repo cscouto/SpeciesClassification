@@ -30,6 +30,10 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -57,10 +61,14 @@ public class SpecieManager {
     DataNormalization scaler;
     File LOCATION_TO_SAVE = new File("src/main/bd/trained_network.zip"); // onde salvar a base
     MultiLayerNetwork model;
+    List<String> labels;
 
     SpecieManager(){
+        scaler = new ImagePreProcessingScaler(0, 1);
+        Path file = Paths.get("src/main/bd/labels.txt");
         try {
-            loadImages();
+            labels = Files.readAllLines(file);
+            carregaBaseDados();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -90,17 +98,13 @@ public class SpecieManager {
         dataIter = new RecordReaderDataSetIterator(recordReader, batchSize, 1, outputNum);
 
         // normaliza valores dos pixel entre 0-1
-        scaler = new ImagePreProcessingScaler(0, 1);
         scaler.fit(dataIter);
         dataIter.setPreProcessor(scaler);
+        Path file = Paths.get("src/main/bd/labels.txt");
+        Files.write(file, dataIter.getLabels(), Charset.forName("UTF-8"));
     }
 
     public List<SpecieClassification> identifySpecie(InputStream bImage) {
-        try {
-            carregaBaseDados();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
         // Use NativeImageLoader to convert to numerical matrix
         NativeImageLoader loader = new NativeImageLoader(height, width, channels);
 
@@ -119,14 +123,14 @@ public class SpecieManager {
         for (int i=0; i<output.length(); i++) {
             SpecieClassification c = new SpecieClassification();
             c.percent = output.getColumn(i).toString();
-            c.name = dataIter.getLabels().get(i);
+            c.name = labels.get(i);
             list.add(c);
         }
         return list;
     }
 
     public List<String> getSpecies(){
-        return dataIter.getLabels();
+        return labels;
     }
 
     public void trainNetwork(){
@@ -152,10 +156,10 @@ public class SpecieManager {
             model = ModelSerializer.restoreMultiLayerNetwork(LOCATION_TO_SAVE);
             model.getLabels();
         }else{
-            makeNewModel();
-            trainModel();
-            recordReader.reset();
-            storeData();
+           // makeNewModel();
+           // trainModel();
+           // recordReader.reset();
+           // storeData();
         }
     }
 

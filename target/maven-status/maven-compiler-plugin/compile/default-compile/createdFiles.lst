@@ -1,0 +1,9 @@
+speciesClasssification\Controller\SpecieManager.class
+speciesClasssification\Model\SpecieRequest.class
+speciesClasssification\Model\SpecieClassification.class
+speciesClasssification\App.class
+speciesClasssification\Model\SpecieClassificationResponse.class
+speciesClasssification\Model\SpecieResponse.class
+speciesClasssification\Controller\SpecieController.class
+speciesClasssification\Model\MessageResponse.class
+utilities\DataUtilities.class
