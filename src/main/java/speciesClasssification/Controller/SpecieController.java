@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import speciesClasssification.Model.*;
 import java.io.*;
 
-
+@CrossOrigin
 @RestController
 public class SpecieController {
     @RequestMapping(value = "/getSpecies")
