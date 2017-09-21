@@ -14,7 +14,6 @@ import java.io.*;
 @RestController
 public class SpecieController {
 
-    @CrossOrigin
     @RequestMapping(value = "/getSpecies")
     public ResponseEntity<SpecieResponse> getSpecies()
     {
@@ -23,7 +22,6 @@ public class SpecieController {
         response.list = mg.getSpecies();
         return new ResponseEntity<SpecieResponse>(response, HttpStatus.OK);
     }
-    @CrossOrigin
     @RequestMapping(value = "/getSpecie", method = RequestMethod.POST, headers="Accept=application/json")
     public ResponseEntity<SpecieClassificationResponse> getSpecies(@RequestBody  SpecieRequest specieRequest)
             throws Exception {

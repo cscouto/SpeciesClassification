@@ -15,8 +15,12 @@
         import org.nd4j.linalg.lossfunctions.LossFunctions;
         import org.springframework.boot.SpringApplication;
         import org.springframework.boot.autoconfigure.SpringBootApplication;
+        import org.springframework.context.annotation.Bean;
+        import org.springframework.web.servlet.config.annotation.CorsRegistry;
+        import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+        import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
-/**
+        /**
  * Created by Tiago on 5/1/2017.
  */
 
@@ -24,7 +28,16 @@
 public class App {
 
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(App.class, args);
+            SpringApplication.run(App.class, args);
     }
+                @Bean
+                public WebMvcConfigurer corsConfigurer() {
+                        return new WebMvcConfigurerAdapter() {
+                                @Override
+                                public void addCorsMappings(CorsRegistry registry) {
+                                        registry.addMapping("/**");
+                                }
+                        };
+                }
 }
 
